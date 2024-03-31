@@ -1,0 +1,152 @@
+.principal {
+    background-color: $cor-cinza01;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    @include flexBox(column, center, center);
+    gap: 30px 0px;
+}
+
+.principal-card {
+    border-radius: 10px;
+    border: 5px solid $cor-azul01;
+    max-width: 1200px;
+    width: 90%;
+    height: 500px;
+    @include flexBox(row,  flex-start, center);
+    gap: 0px 50px;
+    padding: 0px 50px;
+
+        .imagem {
+            max-width: 320px;
+            width: 100%;
+
+                img {
+                    width: 100%;
+                }
+        }
+
+        .escrito {
+            @include flexBox(column, center, none);
+            gap: 10px 0px;
+
+            .titulo {
+                font-size: 2em;
+                color: $cor-branco;
+
+                span {
+                    color: $cor-azul01;
+                }
+            }
+
+            .paragrafo {
+                font-size: 1.3em;
+                font-weight: 600;
+                color: $cor-azul01;
+            }
+        }
+
+        .links {
+            @include flexBox(center, flex-start, center);
+            gap: 0px 20px;
+
+            .link-item {
+                color: $cor-branco;
+                text-decoration: none;
+                font-size: 1.6em;
+                transition: 0.2s;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+
+        .botao {
+            text-decoration: none;
+            background-color: $cor-azul01;
+            max-width: 120px;
+            width: 100%;
+            height: 50px;
+            @include flexBox(row, center, center);
+            border-radius: 5px;
+            color: $cor-branco;
+            font-weight: 500;
+            transition: 0.3s;
+            border: 2px solid $cor-azul01;
+
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $cor-azul01;
+                color: $cor-azul01;
+                font-weight: 500;
+            }
+        }
+}
+
+.imagem-seta {
+    max-width: 50px;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 912px) {
+    .principal-card {
+        height: auto;
+        padding: 30px 0px;
+        flex-direction: column;
+        gap: 30px 0px;
+    }
+
+    .principal-card .imagem  {
+        max-width: 230px;
+        width: 90%;
+    }
+
+    .principal-card .escrito  {
+        align-items: center;
+        gap: 25px 0px;
+    }
+}
+
+
+
+
+@media(max-width: 750px) {
+    .principal-card .escrito .titulo {
+        font-size: 1.7em;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+@media(max-width: 450px) {
+    .principal-card .escrito .titulo {
+        font-size: 1.5em;
+    }
+
+    .principal-card .escrito .paragrafo {
+        font-size: 1.1em;
+        width: 90%;
+        text-align: center;
+      }
+}
+
+
+@media(max-width: 360px) {
+    .principal-card .escrito .titulo {
+        font-size: 1.3em;
+    }
+
+    .principal-card .escrito .paragrafo {
+        font-size: 1em;
+        width: 90%;
+        text-align: center;
+      }
+}
