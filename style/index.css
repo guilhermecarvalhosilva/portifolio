@@ -77,7 +77,7 @@
     display: flex;
   }
   .cabecalho .menu {
-    background-color: #313236;
+    background: red;
     padding: 0px;
     position: fixed;
     top: -100%;
@@ -96,6 +96,7 @@
     font-size: 1.6em;
   }
   .cabecalho .menu.ativo {
+    background: red;
     transition: 0.6s;
     top: 0%;
     overflow-x: hidden;
