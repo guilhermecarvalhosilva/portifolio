@@ -75,10 +75,10 @@
 
 
     .cabecalho .menu {
-        background: red;
+        background-color: $cor-cinza01;
         padding: 0px;
         position: fixed;
-        top: -100%;
+        top: -150%;
         left: 0px;
         width: 100%;
         min-height: 100vh;
@@ -93,7 +93,6 @@
     }
 
     .cabecalho .menu.ativo {
-        background: red;
         transition: 0.6s;
         top: 0%;
         overflow-x: hidden;
