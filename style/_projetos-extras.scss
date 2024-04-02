@@ -47,13 +47,12 @@
 
             #github {
                 border: 3px solid $cor-azul01;
-                color: $cor-azul01;
+                color: $cor-branco;
                 font-weight: 500;
                 transition: 0.3s;
 
                 &:hover {
                     background-color: $cor-azul01;
-                    color: $cor-branco;
                 }
             }
 
@@ -77,6 +76,13 @@
     transition: 1s;
     height: auto;
 }
+
+
+@media(max-width: 400px) {
+    .projetos .titulo {
+        font-size: 2.2em;
+    }
+  }
 
 
 

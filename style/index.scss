@@ -7,6 +7,7 @@
 @import 'principal';
 @import 'habilidades';
 @import 'sobre';
+@import 'certificados';
 @import 'projetos';
 @import 'projetos-extras';
 @import 'rodape';
@@ -29,6 +30,8 @@ body {
 }
 
 .botao-voltar {
+    cursor: pointer;
+    border: none;
     opacity: 0;
     @include flexBox(row, center, center);
     border-radius: 5px;

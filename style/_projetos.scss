@@ -57,13 +57,12 @@
 
                 #github {
                     border: 3px solid $cor-azul01;
-                    color: $cor-azul01;
+                    color: $cor-branco;
                     font-weight: 500;
                     transition: 0.3s;
 
                     &:hover {
                         background-color: $cor-azul01;
-                        color: $cor-branco;
                     }
                 }
 
